@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aniversário 4.3 do Tiago 🎉</title>
+  <title>Feijuca do Finin 🎉</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -23,13 +23,20 @@
       background: rgba(255, 255, 255, 0.92);
       border-radius: 20px;
       padding: 40px 30px;
-      max-width: 400px;
+      max-width: 420px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
       animation: fadeIn 1s ease;
+      overflow-y: auto;
+      max-height: 90vh;
     }
     h1 {
       font-size: 1.8em;
       color: #e91e63;
+    }
+    h2 {
+      color: #444;
+      font-size: 1.2em;
+      margin-top: 20px;
     }
     p {
       margin: 10px 0;
@@ -80,11 +87,16 @@
 </head>
 <body>
   <div class="card">
-    <h1>🎉 Aniversário 4.3 do Tiago 🎉</h1>
+    <h1>🎉 Feijuca do Finin 🎉</h1>
     <p><strong>📅 Data:</strong> 15/11/2025 às 13h</p>
     <p><strong>📍 Local:</strong> Rua Candelária, 190 – Vila Oeste – BH</p>
-    <p>💬 Bora comemorar comigo! Aniversário de 4.3 com muita comida, bebida, música boa e claro aquele Pagodinho 😅</p>
-    <p> Peço que confirme sua presença para que eu posso organizar a quantidade do nosso comes, há e não se esqueça de levar sua bebida de preferência </p>
+
+    <h2>🍽️ O que vai ter?</h2>
+    <p>Feijoada completa e petiscos de entrada!</p>
+    <p>Chopp <strong>Laut Pilsen</strong> liberado 🍺</p>
+    <p>Bebidas destiladas, sucos e refrigerantes — os convidados devem levar 😉</p>
+
+    <p>💬 Bora comemorar comigo! Aniversário de 4.3 com muita comida, bebida, música boa e claro aquele pagodinho 😅</p>
 
     <form id="confirmForm">
       <label for="nome">Seu nome:</label>
@@ -105,10 +117,10 @@
       const nome = document.getElementById("nome").value.trim();
       const acompanhantes = document.getElementById("acompanhantes").value.trim();
 
-      let mensagem = `Oi Tiago! Confirmo minha presença no aniversário dia 15/11 às 13h 🎉%0A`;
+      let mensagem = `Oi Tiago! Confirmo presença na *Feijuca do Finin* dia 15/11 às 13h 🎉%0A`;
       mensagem += `👤 Nome: ${nome}`;
       if (acompanhantes) mensagem += `%0A👥 Acompanhantes: ${acompanhantes}`;
-      mensagem += `%0A🥳 Até lá!`;
+      mensagem += `%0A🍽️ Até lá pra saborear aquela feijoada!`;
 
       const telefone = "5531989634139";
       const url = `https://wa.me/${telefone}?text=${mensagem}`;
